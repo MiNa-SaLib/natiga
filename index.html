@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natigty</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>نتائج جامعة اسيوط</h1>
+      <div class="all">
+        <div class="inp">
+          <label for="text1">الاسم</label>
+          <input type="text" id="text1" />
+        </div>
+
+        <div class="inp">
+          <label for="text2">الكلية</label>
+          <input list="lis" name="lis" id="text2" />
+          <datalist id="lis">
+            <option value="الحقوق"></option>
+            <option value="الحاسبات والمعلومات"></option>
+            <option value="التجارة"></option>
+            <option value="الخدمة الاجتماعية"></option>
+            <option value="الصيدلة"></option>
+            <option value="التربية"></option>
+            <option value="الزراعة"></option>
+          </datalist>
+        </div>
+        <div class="inp">
+          <label for="text2">الفرقة</label>
+          <input list="lis2" name="lis2" id="text3" />
+          <datalist id="lis2">
+            <option id="lis2" value="الاولي"></option>
+            <option id="lis2" value="الثانية"></option>
+            <option id="lis2" value="الثالثة"></option>
+          </datalist>
+        </div>
+
+        <div class="inp">
+          <label for="num">رقم الجلوس</label>
+          <input type="number" id="num" />
+        </div>
+        <input type="button" id="sub" value="عرض النتيجة" />
+        <div class="result"><h3 id="result"></h3></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
